@@ -23,7 +23,7 @@ app.use(express.json());
 app.get('/', (req, res)=>{
     res.send('Bienvenido a la API de Noticias - CrisVasc');
 });
-app.use('/api', routes);
+app.use('/noticias', routes);
 
 
 //servidor en linea
