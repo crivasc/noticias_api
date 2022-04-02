@@ -4,7 +4,7 @@
   "description": "Noticias",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node ."
   },
   "author": "",
   "license": "ISC",
