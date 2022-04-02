@@ -1,3 +1,6 @@
+request.http
+X.txt
+
 # Logs
 logs
 *.log

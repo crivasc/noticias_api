@@ -21,7 +21,7 @@ app.use(express.json());
 
 //rutas
 app.get('/', (req, res)=>{
-    res.send('welcome to the app madafaka');
+    res.send(`${<div><center><h1>Noticias API</h1></center><</div>}`);
 });
 app.use('/api', routes);
 
