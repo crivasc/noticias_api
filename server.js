@@ -21,7 +21,7 @@ app.use(express.json());
 
 //rutas
 app.get('/', (req, res)=>{
-    res.send(`${<div><center><h1>Noticias API</h1></center><</div>}`);
+    res.send('Bienvenido a la API de Noticias - CrisVasc');
 });
 app.use('/api', routes);
 
