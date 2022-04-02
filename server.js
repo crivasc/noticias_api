@@ -9,11 +9,10 @@ const app = express();
 app.set('port', process.env.PORT || 9000);
 
 const dbOptions = {
-    host:'localhost',
-    port: '3306',
-    user:'root',
-    password:'',
-    database:'noticias'
+    host:'us-cdbr-east-05.cleardb.net',
+    user:'b050dc20d39bc2',
+    password:'f43ab754',
+    database:'heroku_b8dfd78ce95a4f4'
 };
 
 //middlewares
