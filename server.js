@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const mysql = require('mysql');
 const myconn = require('express-myconnection');
 
 const routes = require('./routes')
 
 const app = express();
+app.use(cors())
 
 app.set('port', process.env.PORT || 9000);
 
