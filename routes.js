@@ -1,3 +1,4 @@
+const { json } = require('express');
 const express = require('express');
 const routes = express.Router();
 
@@ -33,7 +34,7 @@ routes.post('/', (req, res)=>{
         conn.query('insert into noticias set ?', [req.body], (err, rows)=>{
             if(err) return res.send(err);
 
-            res.send('Noticia guardada')
+            res.send(JSON.stringify('Noticia guardada'))
         });
     });
 });
