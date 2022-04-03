@@ -46,7 +46,7 @@ routes.delete('/:id', (req, res)=>{
         conn.query('delete from noticias where id = ?', [req.params.id], (err, rows)=>{
             if(err) return res.send(err);
 
-            res.send('Noticia borrada')
+            res.send(JSON.stringify('Noticia borrada'))
         });
     });
 });
@@ -58,7 +58,7 @@ routes.put('/:id', (req, res)=>{
         conn.query('update noticias set ? where id = ?', [req.body, req.params.id], (err, rows)=>{
             if(err) return res.send(err);
 
-            res.send('Noticia actualizada')
+            res.send(JSON.stringify('Noticia actualizada'))
         });
     });
 });
